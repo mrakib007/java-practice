@@ -1,8 +1,10 @@
 Every java code starts running from it's main function. That is the starting point for any java code.
 
+//////
 System.out.print() is the line we use for showing output in java. Here system is a class. And print is a function where we have to pass what we want to see as output. 
 System.out.println() is the line we use for showing output in java. This works as println. But it shows output in the next line.
 
+/////
 data types
 1byte = 8 bits
 char = 2bytes
@@ -12,6 +14,7 @@ long = 8bytes
 float = 4bytes
 double = 8bytes
 
+//////
 We take input in java with a class named Scanner. And here is a function called next(). We can take input from it.
 If we want to print more than one word in java, we have to use nextLine() function.
 nextInt() for taking int type value
