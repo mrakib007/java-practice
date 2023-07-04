@@ -19,3 +19,6 @@ We take input in java with a class named Scanner. And here is a function called 
 If we want to print more than one word in java, we have to use nextLine() function.
 nextInt() for taking int type value
 nextFloat() for taking float type value as input.
+
+/////
+In do while loop, the code will be executed at least one time regardless the conditions that are given.
