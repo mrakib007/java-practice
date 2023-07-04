@@ -22,3 +22,7 @@ nextFloat() for taking float type value as input.
 
 /////
 In do while loop, the code will be executed at least one time regardless the conditions that are given.
+
+/////
+There is a small difference between functions and methods.
+We call methods from an object of a class, and we call functions directly.
