@@ -26,3 +26,6 @@ In do while loop, the code will be executed at least one time regardless the con
 /////
 There is a small difference between functions and methods.
 We call methods from an object of a class, and we call functions directly.
+
+/////
+new is a keyword when we need to keep a new space in the memory. Means when we declare a non primitive type variable which needs space in the memory, we use new to keep space for that variable.
