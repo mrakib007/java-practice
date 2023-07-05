@@ -18,3 +18,25 @@ AND OR NOT:
 SELECT * FROM Customers WHERE City='Berlin' or City = "Barcelona";
 SELECT * FROM Customers WHERE Country='Germany' AND City='Berlin';
 SELECT * FROM Customers WHERE NOT Country='Mexico';
+SELECT * From Customers where Country ='Germany' AND (City='Berlin' or City='München');
+SELECT * FROM Customers WHERE NOT Country='Germany' AND NOT Country='USA';
+
+ORDER BY
+SELECT * FROM Customers ORDER BY Country DESC; (Descending order)
+SELECT * FROM Customers Order By Country;
+SELECT * FROM Customers ORDER BY Country ASC, CustomerName DESC;
+
+INSERT INTO
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway');
+
+INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('Cardinal', 'Stavanger', 'Norway'); //specific columns. Here there were 7 columns
+
+IS NULL
+SELECT CustomerName, ContactName, Address FROM Customers WHERE Address IS NULL;
+SELECT CustomerName, ContactName, Address FROM Customers WHERE Address IS NOT NULL;
+
+UPDATE
+UPDATE Customers SET ContactName = 'Alfred Schmidt', City= 'Frankfurt' WHERE CustomerID = 1;
+UPDATE Customers SET ContactName='Juan' WHERE Country='Mexico'; This will update every row containing the value Mexico.
