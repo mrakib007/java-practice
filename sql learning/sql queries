@@ -1,0 +1,20 @@
+commands: SELECT,UPDATE,DELETE,WHERE,INSERT INTO, CREATE DATABASE,ALTER DATABASE
+CREATE TABLE,ALTER TABLE,DROP TABLE,CREATE INDEX,DROP INDEX
+
+All the examples are from w3schools and tested on their website.
+
+SELECT:
+SELECT CustomerName,City,Address FROM Customers;
+select distinct City from Customers; This selects only the distinct values from the customer table.
+select count(distinct city) from Customers; This counts the number of distinct values in a table.
+
+WHERE: 
+SELECT * FROM Customers WHERE Country='Germany'; 
+SELECT * FROM Customers WHERE CustomerID=19;
+SELECT * FROM Customers WHERE City LIKE 'r%'; This selects the city name starts with S.
+SELECT * FROM Products WHERE Price BETWEEN 50 AND 60;
+
+AND OR NOT:
+SELECT * FROM Customers WHERE City='Berlin' or City = "Barcelona";
+SELECT * FROM Customers WHERE Country='Germany' AND City='Berlin';
+SELECT * FROM Customers WHERE NOT Country='Mexico';
