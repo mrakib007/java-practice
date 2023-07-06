@@ -21,6 +21,20 @@ class Student {
         System.out.println(this.name);
         System.out.println(this.age);
     }
+
+    // Student(String name, int age){
+    //     System.out.println("Printing from constructor");
+    //     this.name = name;
+    //     this.age = age;
+    // }
+
+    Student(Student s2){
+        this.name = s2.name;
+        this.age = s2.age;
+    }
+    Student(){
+        
+    }
 }
 
 public class OOPS {
@@ -36,8 +50,9 @@ public class OOPS {
         // pen2.printColor();
 
         Student s1 = new Student();
+        Student s2 = new Student(s1);
         s1.name = "Rakib";
         s1.age = 24;
-        s1.printInfo();
+        s2.printInfo();
     }
 }

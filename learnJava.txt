@@ -34,3 +34,7 @@ new is a keyword when we need to keep a new space in the memory. Means when we d
 String is a non primitive data type 
 We can compare two strings with ==
 but we should use compareTo() function cause sometimes == provides wrong results.
+
+////
+Constructor makes objects in a java class.
+Constructors don't return anything. Not even void. They just construct object.

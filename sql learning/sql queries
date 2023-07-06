@@ -41,4 +41,5 @@ UPDATE
 UPDATE Customers SET ContactName = 'Alfred Schmidt', City= 'Frankfurt' WHERE CustomerID = 1;
 UPDATE Customers SET ContactName='Juan' WHERE Country='Mexico'; This will update every row containing the value Mexico.
 
-start from sql delete
+DELETE
+DELETE from Customers where CustomerName='Alfreds Futterkiste';
