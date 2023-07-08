@@ -43,3 +43,4 @@ UPDATE Customers SET ContactName='Juan' WHERE Country='Mexico'; This will update
 
 DELETE
 DELETE from Customers where CustomerName='Alfreds Futterkiste';
+DELETE from Customers //This will delete all the rows in the table without deleting the table.
