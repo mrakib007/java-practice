@@ -1,8 +1,8 @@
 package Recursion;
 
-//stack height = n
+//stack height = logn
 
-public class PrintXpowerN {
+public class PrintXpowerN2 {
     public static int calculatePower(int x, int n){
         if(n==0){
             return 1;
@@ -10,9 +10,13 @@ public class PrintXpowerN {
         if(x==0){
             return 0;
         }
-        int xpowerNm1 = calculatePower(x, n-1);
-        int xpowerN = x * xpowerNm1;
-        return xpowerN;
+        //if n is even
+        if(n%2==0){
+           return calculatePower (x, n/2) * calculatePower(x, n/2);
+        }else{
+            // n is odd
+            return calculatePower(x, n/2) * calculatePower(x, n/2) * x;
+        }
     }
     public static void main(String[] args) {
         int x = 2,n=5;
@@ -20,3 +24,4 @@ public class PrintXpowerN {
         System.out.println(ans);
     }
 }
+
