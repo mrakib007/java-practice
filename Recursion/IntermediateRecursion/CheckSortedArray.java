@@ -12,7 +12,7 @@ public class CheckSortedArray {
         // }else{
         //     return false;
         // }
-        
+
         if(arr[index] >= arr[index+1]){
             //array is unsorted till now 
             return false;
@@ -25,3 +25,5 @@ public class CheckSortedArray {
         System.out.println(isSorted(arr, 0));
     }
 }
+
+//Time complexity O(n) 
