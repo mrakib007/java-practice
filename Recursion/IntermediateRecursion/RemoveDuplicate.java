@@ -23,3 +23,5 @@ public class RemoveDuplicate {
         removeDuplicate(str, 0, "");
     }
 }
+
+//time complexity O(n)
