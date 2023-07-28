@@ -19,3 +19,5 @@ public class SubsequenceString {
         subsequence(str, 0, "");
     }
 }
+
+//Time complexity: O(2^n)
